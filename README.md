@@ -1,1 +1,1 @@
-My Devops practice
+automatic trigger test
