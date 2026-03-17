@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+    stages {
+        stage('Code Lao') {
+            steps {
+                echo 'GitHub se code aa gaya!'
+            }
+        }
+        stage('Build Karo') {
+            steps {
+                echo 'Code build ho raha hai...'
+                sh 'ls -ltrh'
+            }
+        }
+        stage('Deploy Karo') {
+            steps {
+                echo 'Deployment ho gayi!'
+                sh 'cat deploy.sh'
+            }
+        }
+    }
+}
